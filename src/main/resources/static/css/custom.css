@@ -1,0 +1,398 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+#notice {
+  background: #212A32;
+  padding: 80px 0;
+  color: #999
+}
+#notice h3, h4 {
+  margin: 0;
+  color: #fbf6e5;
+  font-weight: 700;
+}
+#notice ol {
+  padding-left: 3rem
+}
+/* battle*/
+#battle {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 80px 0 0 0;
+  color: #212a32
+}
+#battle h1 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  color: #212a32
+}
+#battle h2 {
+  font-weight: 600;
+  color: #f2682e;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+#battle .text {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  color: #212a32;
+}
+#battle-map {
+  position: relative;
+}
+#battle-map .taiwan {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  padding: 165px 0;
+}
+#battle-map .location {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+}
+#battle-map .store {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  max-width: 360px;
+  height: 240px;
+  background: url("../images/location_bg_a.png") center no-repeat;
+  background-size: 100% 100%;
+  padding: 25px;
+  text-align: start;
+  margin: 15px auto;
+}
+#battle-map .store2 {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  max-width: 360px;
+  height: 300px;
+  background: url("../images/location_bg_b.png") center no-repeat;
+  background-size: 100% 100%;
+  padding: 25px;
+  text-align: start;
+  margin: 15px auto;
+}
+#battle-map .store h4, .store2 h4 {
+  font-size: 1.1rem;
+  color: #fbedc6;
+  margin: 0
+}
+#battle-map .store p, .store2 p {
+  font-size: 0.95rem;
+  color: #fbedc6;
+  margin: 0
+}
+#battle-map .skill-progress-bar {
+  position: relative;
+  height: 30px;
+  background: url("../images/bar_bg.png") no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0;
+}
+#battle-map .skill-progress-percent {
+  width: 0;
+  height: 20px;
+  top: 5px;
+  left: 0;
+  background-color: #ebeeb2 !important;
+  border-radius: 0;
+}
+#battle-map .skill-progress-title h5 {
+  color: #fff;
+  font-weight: 300;
+}
+#battle-map .skill-progress-title .number {
+  color: #f2682e;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+#battle-map .number span {
+  color: #fbedc6;
+}
+#event_content {
+  padding: 80px 0;
+  background: url(../images/bg_orange.png) center center no-repeat;
+  background-size: cover;
+}
+#event_content h1 {
+  color: #fbf6e4;
+  margin-bottom: 15px
+}
+#event_content p {
+  color: #fbf6e4
+}
+/*location postion*/
+@media (min-width: 1200px) {
+  #battle-map {
+    height: 1080px;
+  }
+  #battle-map .store, .store2 {
+    position: absolute !important;
+    margin: 0 !important;
+  }
+  #location1 {
+    top: 80px;
+    left: 175px;
+  }
+  #location2 {
+    top: 375px;
+    left: 0px;
+  }
+  #location3 {
+    top: 680px;
+    left: 60px;
+  }
+  #location4 {
+    top: 70px;
+    right: 30px;
+  }
+  #location5 {
+    top: 385px;
+    right: 130px;
+  }
+  #location6 {
+    top: 695px;
+    right: 240px;
+  }
+  #event_content {
+    padding: 80px 0;
+    background: url(../images/bg_orange.png) center center no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+}
+/*KOL */
+#kol {
+  padding: 80px 0;
+}
+#kol h3 {
+  color: #f2682e;
+  font-weight: 900;
+}
+.map-area {
+  background: url("../images/map_bg.png") center center no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 20px;
+}
+@media (min-width: 1200px) {
+  .map-area {
+    padding: 40px 30px;
+  }
+}
+/*PARTY*/
+.btn {
+  /* Clean style */
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--button-text-color);
+  cursor: pointer;
+  /* Clean style */
+  --button-text-color: var(--highlight-color);
+  --button-text-color-hover: var(--button-background-color);
+  --border-color: #ff4655;
+  --button-background-color: #ff4655;
+  --highlight-color: #ece8e1;
+  --button-inner-border-color: transparent;
+  --button-bits-color: var(--background-color);
+  --button-bits-color-hover: var(--button-background-color);
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all .15s ease;
+}
+.btn::before, .btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid var(--border-color);
+  transition: all .15s ease;
+}
+.btn::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+.btn::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+.btn:active, .btn:focus {
+  outline: none;
+}
+.btn:active::before, .btn:active::after {
+  right: 3px;
+  left: 3px;
+}
+.btn:active::before {
+  top: 3px;
+}
+.btn:active::after {
+  bottom: 3px;
+}
+.btn__inner {
+  position: relative;
+  display: block;
+  padding: 20px 80px;
+  background-color: var(--button-background-color);
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+}
+.btn__inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: var(--button-bits-color);
+}
+.btn__inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: var(--button-bits-color);
+  transition: all .2s ease;
+}
+.btn__slide {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: var(--highlight-color);
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+.btn__content {
+  position: relative;
+}
+.btn:hover {
+  color: var(--button-text-color-hover);
+}
+.btn:hover .btn__slide {
+  width: calc(100% + 15px);
+}
+.btn:hover .btn__inner::after {
+  background-color: var(--button-bits-color-hover);
+}
+.btn--light {
+  --button-background-color: var(--background-color);
+  --button-text-color: var(--highlight-color);
+  --button-inner-border-color: var(--highlight-color);
+  --button-text-color-hover: #ece8e1;
+  --button-bits-color-hover: #ece8e1;
+}
+#party {
+  padding: 0;
+  background: #763191;
+  font-size: 1.3rem;
+  color: #fff;
+}
+#party h2 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+#party .map-area {
+  background: url("../images/party_bg.png") center center no-repeat;
+  width: 100%;
+  background-size: 100%;
+  padding: 60px;
+}
+#party-overlay {
+  background: url("../images/form_bg.jpg") top center;
+  background-size: cover;
+  padding: 4% 0;
+}
+#party-overlay h1 {
+  font-weight: 900;
+  color: #fff
+}
+#party-overlay .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1px solid#231f20;
+  appearance: none;
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#party-overlay .form-control.error {
+  border-color: #763191 !important;
+  background: #af86bc !important;
+}
+.battlebtn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+	background: #212A32;
+	padding: 20px 0;
+}
+.battlebtn a {
+  position: relative;
+}
+@media (min-width: 992px) {
+  .battlekvarea {
+    position: relative;
+    width: 100%;
+  }
+  .battlekv {
+    position: relative;
+    z-index: 9;
+  }
+  .battlebtn {
+    position: absolute;
+		background: none;  
+    /* top: 20%; */
+    width: 20%;
+    left: 21%;
+    bottom: 26%;
+    z-index: 99;
+  }
+  .battlebtn a {
+    position: absolute;
+    /* top: 30%; */
+    left: 0;
+    /* bottom: 0; */
+    right: 0;
+    z-index: 99;
+  }
+  .battlebtn .btn__inner {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    background-color: var(--button-text-color-hover);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+  }
+}

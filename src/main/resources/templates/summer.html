@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="author" content="artron digital">
+<meta name="description" content="玩家於於指定時間內在輻能核心網咖進行特戰英豪「團隊死鬥」模式，即可向工作人員索取抽獎券，
+該網咖達指定拆除進度，就有機會在 8 月 26 日特戰夏日同樂會抽中「1:1 實物大小輻能核心」">
+<meta property="og:title" content=" 特戰英豪夏日玩家召集令 "/>
+<meta property="og:description" content=" 玩家於於指定時間內在輻能核心網咖進行特戰英豪「團隊死鬥」模式，即可向工作人員索取抽獎券，
+該網咖達指定拆除進度，就有機會在 8 月 26 日特戰夏日同樂會抽中「1:1 實物大小輻能核心」" />
+<meta property="og:image" content="https://game.taiwanmobile.com/VALSummer2023/share.png" />
+<meta property="og:type" content="website" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" th:href="@{/images/fav.png}" href="images/fav.png" type="image/x-icon">
+
+<!-- Font Imports -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Core Style -->
+<link rel="stylesheet" th:href="@{/css/style.css}" href="css/style.css">
+
+<!-- Font Icons -->
+<link rel="stylesheet" th:href="@{/css/font-icons.css}" href="css/font-icons.css">
+
+<!-- Plugins/Components CSS -->
+<link rel="stylesheet" th:href="@{/css/swiper.css}" href="css/swiper.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" th:href="@{/css/custom.css}" href="css/custom.css">
+<link rel="stylesheet" th:href="@{/css/footer.css}" href="css/footer.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Document Title
+	============================================= -->
+<title>特戰英豪夏日玩家召集令 | 特戰夏日同樂會 </title>
+</head>
+
+<body class="stretched is-expanded-menu" data-menu-breakpoint="1200">
+
+<!-- Document Wrapper
+	============================================= -->
+<div id="wrapper"> 
+  <!-- Top Bar
+		============================================= --> 
+  <!-- <div id="top-bar" class="dark bg-color py-2">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-center flex-column flex-md-row fw-medium text-center">
+					<span><strong class="text-uppercase flash animated infinite slow d-inline-block me-2">Flash Sale</strong> Get Canvas now for <del>$16</del> <strong>$10</strong> only!</span> <a href="https://1.envato.market/c/1309643/480739/4415?u=https%3A%2F%2Fthemeforest.net%2Fcart%2Fconfigure_before_adding%2F9228123" target="_blank" class="btn btn-sm bg-light h-bg-dark text-dark h-text-light ms-md-3 mt-2 mt-md-0 fw-semibold">Buy Now</a>
+				</div>
+			</div>
+		</div> --> 
+  
+  <!-- Header
+		============================================= -->
+  <header id="header" class="dark " >
+    <div id="header-wrap">
+      <div class="container">
+        <div class="header-row"> 
+          
+          <!-- Logo
+						============================================= -->
+          <div id="logo" class="me-lg-5"> <a th:href="@{/}" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="35" viewBox="0 0 100 100" width="35">
+              <path d="M99.25 48.66V10.28c0-.59-.75-.86-1.12-.39l-41.92 52.4a.627.627 0 00.49 1.02h30.29c.82 0 1.59-.37 2.1-1.01l9.57-11.96c.38-.48.59-1.07.59-1.68zM1.17 50.34L32.66 89.7c.51.64 1.28 1.01 2.1 1.01h30.29c.53 0 .82-.61.49-1.02L1.7 9.89c-.37-.46-1.12-.2-1.12.39v38.38c0 .61.21 1.2.59 1.68z" fill="#fff"></path>
+            </svg>
+            </a> </div>
+          <!-- #logo end -->
+          
+          <div class="primary-menu-trigger">
+            <button class="cnvs-hamburger" type="button" title="Open Mobile Menu"> <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span> </button>
+          </div>
+          
+          <!-- Primary Navigation
+						============================================= -->
+          <nav class="primary-menu mobile-menu-off-canvas flex-xl-fill me-auto">
+            <ul class="menu-container justify-content-end">
+              <li class="menu-item"> <a class="menu-link" th:href="@{/battle}" href="battle.html">
+                <div>全台網咖死鬥對決</div>
+                </a> </li>
+              <li class="menu-item"> <a class="menu-link" th:href="@{/summer}" href="summer.html">
+                <div>特戰夏日同樂會</div>
+                </a> </li>
+              <li class="menu-item"> <a class="menu-link" th:href="@{/party}" href="party.html">
+                <div>VCT觀賽派對報名</div>
+                </a> </li>
+            </ul>
+          </nav>
+          <!-- #primary-menu end --> 
+        </div>
+      </div>
+    </div>
+    <div class="header-wrap-clone"></div>
+  </header>
+  <!-- #header end --> 
+  
+  <!-- KV
+		============================================= -->
+	  <section class="battlekvarea">
+    <div class="battlekv"><img th:src="@{/images/banner-b.png}" src="images/banner-b.png" class="w-100" alt="特戰夏日同樂會"/> </div>
+    <div class="battlebtn"> <a class="btn mb-0"> <span class="btn__inner"> <span class="btn__slide"></span> <span class="btn__content">立即報名</span> </span> </a> </div>
+  </section>
+  <section id="battle">
+    <div class="container">
+      <div class="row text-lg-center align-items-center ">
+        <h1><strong>活動資訊</strong></h1>
+        <div class="col-lg-6 text-start">
+          <h2>活動時間</h2>
+          <p>2023 年 8 月 26 日(六) 晚上 19:00 至 22:00</p>
+          <h2>地點</h2>
+          <p>微風廣場 /微風藝文中心 9F D廳<br>
+            台北市松山區復興南路一段39號</p>
+          <h2>交通資訊</h2>
+          <p> 捷運板南線 忠孝復興站 5 號出口往市民大道方向即可以抵達<br>
+            捷運文湖線 南京復興站 5 號出口出口往市民大道方向即可以抵達</p>
+          <p></p>
+        </div>
+        <div class="col-lg-6 " >
+          <div class="map-area">
+            <div style="overflow:hidden;resize:none;max-width:100%;">
+              <div id="my-map-display" style="height:360px; width:100%;max-width:600px;">
+                <iframe style="height:360px;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=台灣台北市松山區復興南路一段39號　微風廣場&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div th:style="'background: url('+'images/bg3.png'+') center center no-repeat; background-size: 100% 100%;'">
+      <div id="kol" >
+        <div class="container">
+          <div class="row text-lg-center ">
+            <h1><strong>到場實況主資訊</strong></h1>
+            <!-- 01 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/01crazyface.png}" src="images/kol/01crazyface.png" alt="CrazyFace"/>
+              <h3>CrazyFace</h3>
+            </div>
+            <!-- 02 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/02dog.png}" src="images/kol/02dog.png" alt="龜狗"/>
+              <h3>龜狗</h3>
+            </div>
+            <!-- 03 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/03as.png}" src="images/kol/03as.png" alt="阿森"/>
+              <h3>阿森</h3>
+            </div>
+            <!-- 04 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/04si.png}" src="images/kol/04si.png" alt="月希"/>
+              <h3>月希*</h3>
+            </div>
+            <!-- 05 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/059q.png}" src="images/kol/059q.png" alt="9Q"/>
+              <h3>9Q</h3>
+            </div>
+            <!-- 06 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/06cw.png}" src="images/kol/06cw.png" alt="家偉"/>
+              <h3>家偉</h3>
+            </div>
+            <!-- 07 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/07kmomo.png}" src="images/kol/07kmomo.png" alt="KMOMO"/>
+              <h3>KMOMO*</h3>
+            </div>
+            <!-- 08 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/08kant.png}" src="images/kol/08kant.png" alt="KANT"/>
+              <h3>KANT*</h3>
+            </div>
+            <!-- 09 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/09miu.png}" src="images/kol/09miu.png" alt="子喵"/>
+              <h3>子喵*</h3>
+            </div>
+            <!-- 10 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/10son.png}" src="images/kol/10son.png" alt="乖兒子"/>
+              <h3>乖兒子</h3>
+            </div>
+            <!-- 11 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/11nia.png}" src="images/kol/11nia.png" alt="NIA"/>
+              <h3>NIA</h3>
+            </div>
+            <!-- 12 -->
+            <div class="col-lg-3 col-6 col-md-4"> <img th:src="@{/images/kol/12rex.png}" src="images/kol/12rex.png" alt="REX"/>
+              <h3>REX</h3>
+            </div>
+            <p>*僅出席VCT觀賽派對</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="event_content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center mb-5">
+            <h1 class="text-start text-lg-center" style="color: #212a32" >活動時程</h1>
+            <img th:src="@{/images/time.png}" src="images/time.png" alt="活動時程"/></div>
+          <div class="col-md-8 mb-5 text-center"><img th:src="@{/images/gift.png}" src="images/gift.png" alt="豐富好禮"/></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTENT
+		============================================= --> 
+  <!-- Footer
+		============================================= -->
+  <footer>
+    <div class="_2WHHmyrJNsleSPqyK5918a riotbar-footer" data-testid="riotbar:footer">
+      <div class="_3AYbzClUxsU2maVqIee5X riotbar-footer-content " data-testid="riotbar:footer:content"> 
+        <!--<div class="_29my_mPdIV9jPVioVH_jGd riotbar-footer-links ">
+          <ul>
+            <li class="riotbar-footer-link"><a class="" href="/zh-tw/download/" target="_blank" data-testid="riotbar:footer:link-download-footer">下載遊戲</a></li>
+          </ul>
+        </div>-->
+        <div class="_3tOmEyMTDQ_ETh9CuxsqLK riotbar-social-links">
+          <ul>
+            <li><a class=" _3YN2W34Ia8MMkttsKrAc5g link-facebook link-social" href="https://www.facebook.com/valoranttw" target="_blank" data-testid="riotbar:footer:social-facebook">
+              <svg class="" viewBox="0 0 15 15">
+                <title>facebook</title>
+                <path d="M15 7.54A7.5 7.5 0 106.33 15V9.73h-1.9V7.54h1.9V5.91a2.65 2.65 0 012.83-3 12.09 12.09 0 011.68.14v1.86H9.9a1.09 1.09 0 00-1.23 1.18V7.5h2.08l-.33 2.19H8.67v5.27A7.54 7.54 0 0015 7.54z"></path>
+              </svg>
+              <span class="qYdzzVvsALoZ6Jcs-tLLk image-alt-text">Facebook</span></a></li>
+            <li><a class=" _3YN2W34Ia8MMkttsKrAc5g link-youtube link-social" href="https://www.youtube.com/PlayValorant" target="_blank" data-testid="riotbar:footer:social-youtube">
+              <svg class="" viewBox="0 0 16.67 11.67">
+                <title>youtube</title>
+                <path d="M14.85.36a2.08 2.08 0 011.47 1.47 20.5 20.5 0 01.34 4 22.19 22.19 0 01-.34 4 2.1 2.1 0 01-1.47 1.47 51.13 51.13 0 01-6.52.34 48.46 48.46 0 01-6.52-.36A2.07 2.07 0 01.34 9.82a23.82 23.82 0 010-8A2.11 2.11 0 011.81.34a49.68 49.68 0 016.52-.35 48.31 48.31 0 016.52.37zm-3.84 5.48l-4.34 2.5v-5z"></path>
+              </svg>
+              <span class="qYdzzVvsALoZ6Jcs-tLLk image-alt-text">YouTube</span></a></li>
+            <li><a class=" _3YN2W34Ia8MMkttsKrAc5g link-instagram link-social" href="https://www.instagram.com/valoranttw" target="_blank" data-testid="riotbar:footer:social-instagram">
+              <svg class="" viewBox="0 0 13.26 13.3">
+                <title>instagram</title>
+                <path d="M6.63 3.29a3.43 3.43 0 103.42 3.44 3.43 3.43 0 00-3.42-3.44zm0 5.65a2.22 2.22 0 112.22-2.22 2.21 2.21 0 01-2.22 2.22z" fill="#fdfefe" fill-rule="evenodd"></path>
+                <path d="M10.96 3.13a.8.8 0 11-.8-.8.8.8 0 01.8.8z" fill="#fdfefe"></path>
+                <path d="M6.63.05H3.88a5 5 0 00-1.62.31 3.31 3.31 0 00-1.18.77 3.31 3.31 0 00-.77 1.18 5.29 5.29 0 00-.35 1.62v5.5a5.22 5.22 0 00.35 1.62 3.35 3.35 0 00.77 1.19 3.42 3.42 0 001.18.76 4.75 4.75 0 001.62.31h5.5a4.75 4.75 0 001.58-.32 3.15 3.15 0 001.18-.76 3.35 3.35 0 00.82-1.18 5 5 0 00.31-1.61V3.93a5 5 0 00-.31-1.62 3.46 3.46 0 00-2-2A5 5 0 009.33.05a26.88 26.88 0 01-2.7 0zm0 1.2h2.69a3.78 3.78 0 011.24.23 2.21 2.21 0 011.27 1.27 3.67 3.67 0 01.23 1.23v5.39a3.78 3.78 0 01-.23 1.24 2.21 2.21 0 01-1.27 1.27 3.77 3.77 0 01-1.24.22H3.96a3.77 3.77 0 01-1.24-.22 2.21 2.21 0 01-1.27-1.27 3.78 3.78 0 01-.23-1.24V3.98a3.67 3.67 0 01.21-1.23A2.21 2.21 0 012.7 1.48a3.78 3.78 0 011.26-.23c.68.01.89 0 2.67 0z" fill="#fdfefe" fill-rule="evenodd"></path>
+              </svg>
+              <span class="qYdzzVvsALoZ6Jcs-tLLk image-alt-text">Instagram</span></a></li>
+          </ul>
+        </div>
+        <div class="_1y5wMFtMhfOQOwUmHI92Cj riotbar-footer-logos">
+          <div class="_2Pgrt3koXCPng_hCKD8v8s riotbar-footer-logo "><a href="http://www.riotgames.com/" target="_blank" data-testid="riotbar:footer:logo-riot">
+            <svg width="99" height="32" class="" viewBox="0 0 587.93 165">
+              <title> Riot Games </title>
+              <title>riotLogo-mobile21</title>
+              <path d="M98.77.33L0 46.07l24.61 93.66 18.73-2.3-5.15-58.89 6.15-2.74L54.96 136l32.01-3.93-5.69-65 6.09-2.71 11.68 66.23 32.38-3.98-6.23-71.25 6.16-2.74 12.77 72.43 32.01-3.93V19.71L98.77.33zm2.32 142.05l1.63 9.22 73.42 12.24v-30.68l-75.01 9.22h-.04zm144.49-19.22v12.63h15.57a14.84 14.84 0 01-1.92 7.31 13 13 0 01-5.6 5.11 20 20 0 01-8.9 1.8 17.53 17.53 0 01-10-2.8 17.87 17.87 0 01-6.44-8.14 33.06 33.06 0 01-2.27-12.93 31.81 31.81 0 012.32-12.81 18.14 18.14 0 016.5-8 17.27 17.27 0 019.82-2.78 19.31 19.31 0 015.36.71 14.15 14.15 0 014.33 2.09 12.92 12.92 0 013.18 3.29 15.61 15.61 0 012 4.44h17.27a27.22 27.22 0 00-3.46-10.28 28.84 28.84 0 00-7.05-8.1 32.6 32.6 0 00-9.91-5.29 37.91 37.91 0 00-12.06-1.86 37.32 37.32 0 00-14 2.6 32.6 32.6 0 00-11.36 7.61 35 35 0 00-7.61 12.21 46.15 46.15 0 00-2.73 16.44q0 11.94 4.54 20.59a32.4 32.4 0 0012.69 13.27 39.84 39.84 0 0035.84.84 28.39 28.39 0 0011.67-11q4.25-7.19 4.24-17.2v-9.76zm215.03 40.81V88.53h51.67v13.96h-34.62v16.76h27.99v13.96h-27.99v16.8h34.7v13.96h-51.75zm101.83-53.3a9 9 0 00-3.54-6.64c-2.09-1.59-5-2.38-8.69-2.38a16.63 16.63 0 00-6.26 1 8.62 8.62 0 00-3.83 2.78 6.74 6.74 0 00-1.33 4 6.2 6.2 0 00.79 3.29 7.27 7.27 0 002.4 2.45 16.54 16.54 0 003.7 1.79 40.14 40.14 0 004.64 1.31l6.63 1.54a47.19 47.19 0 019.45 3.08 27.46 27.46 0 017.2 4.68 18.84 18.84 0 014.58 6.39 20.37 20.37 0 011.61 8.29 20.65 20.65 0 01-3.54 12.11 22.56 22.56 0 01-10.15 7.85 41.31 41.31 0 01-15.93 2.76 42.69 42.69 0 01-16.17-2.81 23.22 23.22 0 01-10.72-8.48q-3.83-5.66-4-14.12h16.43a10.68 10.68 0 007.05 9.94 19.37 19.37 0 007.24 1.26 18.44 18.44 0 006.66-1.09 10 10 0 004.33-3 7.22 7.22 0 001.57-4.48 6.16 6.16 0 00-1.42-4 10.86 10.86 0 00-4.14-2.81 42.07 42.07 0 00-6.89-2.14l-8.07-1.95q-9.65-2.3-15.23-7.26t-5.54-13.44a19.86 19.86 0 013.72-12.12 24.74 24.74 0 0110.33-8.11 36.74 36.74 0 0115-2.91 35.62 35.62 0 0114.92 2.91 23.43 23.43 0 019.91 8.14 21.54 21.54 0 013.6 12.12zm-113.99 53.3h-16.87v-57.35l-1.73-.02-17.04 57.37h-16.86l-16.58-57.37-2.15.02v57.35h-16.87V88.53h28.67l14.48 50.56h1.75l14.48-50.56h28.72v75.44zm-114.66 0h18.27l-25.33-75.43h-23.15l-25.37 75.43h18.3l4.93-16.54h27.42zm-28.43-29.7l8.22-27.65h3.1l8.26 27.65zm278.58-37.76a4 4 0 01-3.67-2.44 4 4 0 010-3.1 4 4 0 01.85-1.27 4.25 4.25 0 011.27-.86 4.15 4.15 0 013.1 0 4.13 4.13 0 011.27.86 4.08 4.08 0 01.86 1.27 4 4 0 010 3.1 4.08 4.08 0 01-.86 1.27 4 4 0 01-1.27.86 4 4 0 01-1.55.31zm0-1.09a2.84 2.84 0 001.47-.39 2.94 2.94 0 001.05-1 2.93 2.93 0 000-2.92 3 3 0 00-1.06-1 2.93 2.93 0 00-2.92 0 3 3 0 00-1 1 2.86 2.86 0 000 2.92 3 3 0 001 1 2.83 2.83 0 001.46.39zm-1.46-1.15V90.6h1.78a1.52 1.52 0 01.69.15 1.13 1.13 0 01.47.42 1.24 1.24 0 01.17.66 1.16 1.16 0 01-.18.66 1 1 0 01-.48.41 1.56 1.56 0 01-.7.14h-1.2v-.72h1a.52.52 0 00.36-.12.5.5 0 00.14-.37.47.47 0 00-.14-.37.52.52 0 00-.36-.12h-.55v2.93zm2.39-1.68l.82 1.68h-1.11l-.75-1.68zM282.41 1.03h17.05v75.44h-17.05zm98.02 37.72q0 12.42-4.71 21a32.67 32.67 0 01-12.79 13.17 38.57 38.57 0 01-36.31 0 32.75 32.75 0 01-12.79-13.2q-4.71-8.66-4.71-21t4.71-21.05a32.67 32.67 0 0112.75-13.14 38.65 38.65 0 0136.31 0 32.67 32.67 0 0112.79 13.17q4.71 8.64 4.71 21.05m-17.35 0a33.35 33.35 0 00-2.23-13 17.47 17.47 0 00-6.33-8 18.57 18.57 0 00-19.45 0 17.57 17.57 0 00-6.35 8 38.59 38.59 0 000 26 17.49 17.49 0 006.35 8 18.57 18.57 0 0019.45 0 17.39 17.39 0 006.33-8 33.4 33.4 0 002.23-13M246.58 50.17l8.76 26.3h18.71l-9.74-28.33h-13.23l-.79-2.44c2.52-.49 6.83-1.25 10.65-3.85a20 20 0 008.75-16.39 24.15 24.15 0 00-3.26-12.75 21.9 21.9 0 00-9.36-8.64 32.56 32.56 0 00-14.64-3H212v75.4h17.06v-26.3zm-.32-15.61a19.35 19.35 0 01-7.26 1.18h-9.94V14.88h9.91a18.68 18.68 0 017.25 1.24 9.12 9.12 0 014.4 3.7 10 10 0 011.5 5.64 9.65 9.65 0 01-1.48 5.55 8.86 8.86 0 01-4.38 3.55M382.04 1.03v14h29.3l.8 2.45c-2.48.48-6.67 1.22-10.43 3.7v55.31h16.87v-61.5h19.62v-14z"></path>
+            </svg>
+            </a></div>
+          <div data-interaction-id="taiwan-mobile" class="_2130dY8F9cjIeCdDGsWgRA riotbar-footer-sub-logo"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt112601de3d707be6/5f19d08c853a6e205829d645/TWM_Logo_White_2.png?&amp;height=75&amp;disable=upscale" alt="taiwan-mobile"></div>
+          <div data-interaction-id="val-logo" class="_2130dY8F9cjIeCdDGsWgRA riotbar-footer-sub-logo"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt50870b13992cdf47/63b0d7d089f85210f400107e/val-logo-small.png?&amp;height=75&amp;disable=upscale" alt="val-logo"></div>
+        </div>
+        <div class="_2MQBVXoMNHaA5jCv6-rKyc riotbar-copyright ">
+          <p data-testid="riotbar:footer:copyright:text" class="sqwC2nnXdkGzh_DTJl_2O riotbar-footer-copyright-text ">™ &amp; © 2023 Riot Games, Inc.。《VALORANT 特戰英豪》及其所有相關標誌、角色、名稱及特徵形象皆為 Riot Games, Inc. 專屬之財產。保留所有權利。</p>
+          <div data-testid="riotbar:footer:copyright:messages" class="markup"><br>
+            通過下載， 安裝和／或將Riot帳戶連接到特戰英豪遊戲軟體， 即表示您同意台灣大哥大股份有限公司的 「使用者合約」和「隱私權政策」。</div>
+        </div>
+        <div class="_2Ojj9KgtyZTHH-I2MkvQqi riotbar-legal-links">
+          <ul>
+            <li><a class="" href="https://www.riotgames.com/zh-hant/privacy-notice" target="_blank" data-testid="riotbar:footer:legal:link-Privacy">Riot隱私權聲明</a></li>
+            <li><a class="" href="https://www.riotgames.com/en/terms-of-service-ZH" target="_blank" data-testid="riotbar:footer:legal:link-Terms of Service">服務條款</a></li>
+            <li><a class="" href="https://game.taiwanmobile.com/assets/game-privacy.html" target="_blank" data-testid="riotbar:footer:legal:link-twm-privacy">隱私權聲明</a></li>
+            <!--<li><a class="" href="javascript:void(0);" target="" data-testid="riotbar:footer:legal:link-osano">COOKIE偏好設定</a></li>-->
+          </ul>
+        </div>
+        <div class="_1BiwNWzqtOdFM9Aefa2YbM riotbar-game-ratings">
+          <div class="_2nq5cqD9DXcJxtSaQ3I_nK riotbar-game-rating">
+            <div class="_3D_hnYS4CHKsqOwdJ6r1yh riotbar-game-rating-text-wrapper"><span class="o6-G7b-VAzGZ_yBQ9iIXE riotbar-game-rating-logo" data-rating-id="tw-15-plus" data-testid="riotbar:footer:rating:link-tw-15-plus"><img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt0f4f95f6f74e5141/5fc6cb0c46f622769b5f31e2/tw-rating-15.jpg?&amp;height=100&amp;disable=upscale" alt="" title=""></span>
+              <div class="_2whETlN2IthWQVWlE9pIeQ riotbar-game-rating-text" data-testid="riotbar:footer:rating:text">請注意遊戲時間，避免沉迷。<br>
+                本遊戲為免費使用，內另有提供購買虛擬遊戲幣、物品等付費服務。<br>
+                本遊戲情節涉及暴力及性(輕微裸露)之情節<br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer end --> 
+  
+</div>
+<!-- #wrapper end --> 
+
+<!-- Go To Top
+	============================================= -->
+<div id="gotoTop" class="uil uil-angle-up"></div>
+
+<!-- JavaScripts
+	============================================= --> 
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyBcX73k1gDX3K-oB3YFR6BCvXHZcEUq1ag"></script> 
+<script th:src="@{/js/functions.js}" src="js/functions.js"></script>
+</body>
+</html>

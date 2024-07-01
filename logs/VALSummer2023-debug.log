@@ -1,0 +1,66 @@
+[m2023-08-14 11:12:55.317[m [36m[DEBUG][m[[1;34mbackground-preinit[m][] -    [1;33mLoggerProviders[m: Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[m2023-08-14 11:12:55.340[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mStartupInfoLogger[m: Starting VALSummer2023Application using Java 1.8.0_302 on KenBookFast.local with PID 28156 (/Users/ken/IdeaProjects/VALSummer2023/target/classes started by ken in /Users/ken/IdeaProjects/VALSummer2023)
+[m2023-08-14 11:12:55.342[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mStartupInfoLogger[m: Running with Spring Boot v2.7.13, Spring v5.3.28
+[m2023-08-14 11:12:55.342[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mSpringApplication[m: No active profile set, falling back to 1 default profile: "default"
+[m2023-08-14 11:12:56.105[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mDirectJDKLog[m: Initializing ProtocolHandler ["http-nio-8080"]
+[m2023-08-14 11:12:56.375[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.d.c.DemoController:
+	
+[m2023-08-14 11:12:56.381[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.i.c.IndexController:
+	{GET [/summer]}: toSummer(Model)
+	{GET [/party]}: toParty(Model)
+	{GET [/form]}: toForm(Model)
+	{GET []}: toIndex(Model)
+[m2023-08-14 11:12:56.382[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.r.c.RegisterProgressController:
+	{GET [/battle]}: getRegisterProgress(Model)
+[m2023-08-14 11:12:56.383[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.s.c.SignUpController:
+	{GET [/auth/signUp/form]}: init(WebRequest,Model,RedirectAttributes)
+	{GET [/redirect/login]}: redirect()
+	{POST [/auth/signUp/form]}: signUp(Model,SignUpForm)
+[m2023-08-14 11:12:56.383[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.s.c.SignUpRestController:
+	
+[m2023-08-14 11:12:56.384[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[m2023-08-14 11:12:56.387[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractDetectingUrlHandlerMapping[m: 'beanNameHandlerMapping' {}
+[m2023-08-14 11:12:56.393[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mSimpleUrlHandlerMapping[m: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+[m2023-08-14 11:12:56.464[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mDirectJDKLog[m: Starting ProtocolHandler ["http-nio-8080"]
+[m2023-08-14 11:12:56.483[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mStartupInfoLogger[m: Started VALSummer2023Application in 1.549 seconds (JVM running for 2.085)
+[m2023-08-14 11:24:49.675[m [36m[DEBUG][m[[1;34mbackground-preinit[m][] -    [1;33mLoggerProviders[m: Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+[m2023-08-14 11:24:49.696[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mStartupInfoLogger[m: Starting VALSummer2023Application using Java 1.8.0_302 on KenBookFast.local with PID 28290 (/Users/ken/IdeaProjects/VALSummer2023/target/classes started by ken in /Users/ken/IdeaProjects/VALSummer2023)
+[m2023-08-14 11:24:49.698[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mStartupInfoLogger[m: Running with Spring Boot v2.7.13, Spring v5.3.28
+[m2023-08-14 11:24:49.698[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mSpringApplication[m: No active profile set, falling back to 1 default profile: "default"
+[m2023-08-14 11:24:50.303[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mDirectJDKLog[m: Initializing ProtocolHandler ["http-nio-8080"]
+[m2023-08-14 11:24:50.550[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.d.c.DemoController:
+	
+[m2023-08-14 11:24:50.556[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.i.c.IndexController:
+	{GET [/summer]}: toSummer(Model)
+	{GET [/party]}: toParty(Model)
+	{GET [/form]}: toForm(Model)
+	{GET []}: toIndex(Model)
+[m2023-08-14 11:24:50.558[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.r.c.RegisterProgressController:
+	{GET [/battle]}: getRegisterProgress(Model)
+[m2023-08-14 11:24:50.558[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.s.c.SignUpController:
+	{GET [/auth/signUp/form]}: init(WebRequest,Model,RedirectAttributes)
+	{POST [/auth/signUp/form]}: signUp(Model,SignUpForm)
+	{GET [/redirect/login]}: redirect()
+[m2023-08-14 11:24:50.558[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	c.v.s.c.SignUpRestController:
+	
+[m2023-08-14 11:24:50.559[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractHandlerMethodMapping[m: 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ [/error]}: error(HttpServletRequest)
+	{ [/error], produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[m2023-08-14 11:24:50.562[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mAbstractDetectingUrlHandlerMapping[m: 'beanNameHandlerMapping' {}
+[m2023-08-14 11:24:50.568[m [36m[DEBUG][m[[1;34mrestartedMain[m][] -    [1;33mSimpleUrlHandlerMapping[m: 'resourceHandlerMapping' {/webjars/**=ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]], /**=ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]}
+[m2023-08-14 11:24:50.632[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mDirectJDKLog[m: Starting ProtocolHandler ["http-nio-8080"]
+[m2023-08-14 11:24:50.649[m [32m[INFO ][m[[1;34mrestartedMain[m][] -    [1;33mStartupInfoLogger[m: Started VALSummer2023Application in 1.477 seconds (JVM running for 1.995)

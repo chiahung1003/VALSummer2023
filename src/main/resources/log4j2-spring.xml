@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorinterval="1800" status="debug" packages="org.apache.logging.log4j.core">
+    <Properties>
+        <Property name="basePath">logs</Property>
+        <Property name="serviceName">VALSummer2023</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%style{%d{yyyy-MM-dd HH:mm:ss.SSS}{GMT+8}} %highlight{[%-5level]}[%style{%t}{bright,blue}][%style{%X{requestId}}{bright,blue}] %style{%C{1}}{bright,yellow}: %msg%n%throwable"/>
+        </Console>
+
+        <RollingRandomAccessFile name="DebugFile"
+                                 fileName="${basePath}/${serviceName}-debug.log"
+                                 filePattern="${basePath}/$${date:yyyy-MM}/${serviceName}-debug-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout
+                    pattern="%style{%d{yyyy-MM-dd HH:mm:ss.SSS}{GMT+8}} %highlight{[%-5level]}[%style{%t}{bright,blue}][%style{%X{requestId}}{bright,blue}] - %X{dd.trace_id} %X{dd.span_id}  %style{%C{1}}{bright,yellow}: %msg%n%throwable"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+    </Appenders>
+
+    <Loggers>
+        <logger name="org.hibernate" level="ERROR" additivity="true"/>
+        <logger name="org.springframework" level="ERROR" additivity="true"/>
+        <logger name="org.thymeleaf" level="ERROR" additivity="true"/>
+        <logger name="com.zaxxer.hikari" level="ERROR" additivity="true"/>
+        <logger name="org.apache.catalina" level="OFF" additivity="true"/>
+        <logger name="org.apache.http" level="OFF" additivity="true"/>
+        <logger name="org.apache.poi" level="OFF" additivity="true"/>
+        <logger name="com.amazonaws" level="WARN" additivity="true"/>
+        <logger name="io.netty" level="WARN" additivity="true"/>
+        <logger name="io.lettuce.core" level="WARN" additivity="true"/>
+        <logger name="io.awspring.cloud.messaging" level="WARN" additivity="true"/>
+
+        <!-- LOG everything at INFO level -->
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="DebugFile"/>
+        </Root>
+
+    </Loggers>
+
+</Configuration>
